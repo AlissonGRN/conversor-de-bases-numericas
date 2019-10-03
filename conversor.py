@@ -14,12 +14,17 @@ opcao = int(input("opção: "))
 
 if opcao == 1:
     numDecimal = int((input('Digite um número decimal: ')))
-    print('convertido para binário: {}'.format(bin(numDecimal)))
-    print('convertido para hexadecimal: {}'.format(hex(numDecimal)))
-    print('convertido para octal: {}'.format(oct(numDecimal)))
+    print('convertido para binário: {}'.format(bin(numDecimal)[2:]))
+    print('convertido para hexadecimal: {}'.format(hex(numDecimal)[2:]))
+    print('convertido para octal: {}'.format(oct(numDecimal)[2:]))
 
 elif opcao == 2:
-    pass
+    numBinario = input('Digite um número em binario: ')
+    print('convertido para decimal: {}'.format(int(numBinario, 2)))
+    print('convertido para hexadecimal: {}'.format(hex(int(numBinario, 2))[2:]))
+    print('convertido para octal: {}'.format(oct(int(numBinario, 2))[2:]))
+
+
 elif opcao == 3:
     pass
 elif opcao == 4:
