@@ -19,14 +19,18 @@ if opcao == 1:
     print('convertido para octal: {}'.format(oct(numDecimal)[2:]))
 
 elif opcao == 2:
-    numBinario = input('Digite um número em binario: ')
+    numBinario = input('Digite um número em binário: ')
     print('convertido para decimal: {}'.format(int(numBinario, 2)))
     print('convertido para hexadecimal: {}'.format(hex(int(numBinario, 2))[2:]))
     print('convertido para octal: {}'.format(oct(int(numBinario, 2))[2:]))
 
-
 elif opcao == 3:
-    pass
+    numOctal = input('Digite um número em octal: ')
+    print('convertido para decimal: {}'.format(int(numOctal, 8)))
+    print('convertido para hexadecimal: {}'.format(hex(int(numOctal, 8))[2:]))
+    print('convertido para binário: {}'.format(bin(int(numOctal, 8))[2:]))
+    
+
 elif opcao == 4:
     pass
 else:
