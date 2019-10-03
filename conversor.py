@@ -6,15 +6,15 @@ print('-'*30)
 
 print('''Qual base numerica deseja utilizar ?
 Decimal     [ 1 ] 
-Binario     [ 2 ]
+Binário     [ 2 ]
 Octal       [ 3 ]
 Hexadecimal [ 4 ]
 ''')
 opcao = int(input("opção: "))
 
 if opcao == 1:
-    numDecimal = int((input('Digite um numero decimal: ')))
-    print('convertido para binario: {}'.format(bin(numDecimal)))
+    numDecimal = int((input('Digite um número decimal: ')))
+    print('convertido para binário: {}'.format(bin(numDecimal)))
     print('convertido para hexadecimal: {}'.format(hex(numDecimal)))
     print('convertido para octal: {}'.format(oct(numDecimal)))
 
@@ -25,4 +25,4 @@ elif opcao == 3:
 elif opcao == 4:
     pass
 else:
-    print('opção não recomhecida')
+    print('opção não recohecida')
