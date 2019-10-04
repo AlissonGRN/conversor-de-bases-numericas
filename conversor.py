@@ -30,8 +30,11 @@ elif opcao == 3:
     print('convertido para hexadecimal: {}'.format(hex(int(numOctal, 8))[2:]))
     print('convertido para binário: {}'.format(bin(int(numOctal, 8))[2:]))
     
-
 elif opcao == 4:
-    pass
+    numHexadecimal = input('Digite um número em hexadecimal: ')
+    print('convertido para decimal: {}'.format(int(numHexadecimal, 16)))
+    print('convertido para binário: {}'.format(bin(int(numHexadecimal, 16))[2:]))
+    print('convertido para octal: {}'.format(oct(int(numHexadecimal, 16))[2:]))
+    
 else:
     print('opção não recohecida')
